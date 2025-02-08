@@ -1,0 +1,16 @@
+name: My First Workflow
+
+on:
+  push:
+    branches: [ "main" ] # Trigger the workflow on pushes to the main branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: iniyan.nalangilli@straive.com 
+      run: echo "Hello, world!"
